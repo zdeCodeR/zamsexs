@@ -3,16 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Tools dokseng orang berbasis web">
+        <meta name="description" content="Tools dokseng berbasis web">
         <meta property="og:image" content="https://i.pinimg.com/originals/cb/7f/d1/cb7fd1aaf24a5fa06289691568dd0873.jpg">
-        <title>Dokseng orang</title>
+        <title></title>
         <script src="https://cdn.tailwindcss.com"></script>
         <script type="text/javascript" src="src/nik-parser.js"></script>
         <script>
             function parseNIK() {
                 const nik = document.getElementById('nikInput').value;
                 nikParse(nik, function(result) {
-                    console.log(result); // object
+                    console.log(result); 
                     const resultText = JSON.stringify(result, null, 2);
                     document.getElementById('result').innerText = resultText;
                     document.getElementById('result').classList.add('fade-in');
@@ -29,7 +29,7 @@
             }
         </script>
         <style>
-            /* Animation for fading in result */
+        
             .fade-in {
                 animation: fadeIn 1s ease-in-out;
             }
@@ -39,16 +39,14 @@
                 100% { opacity: 1; }
             }
 
-            /* Hover effect for buttons */
             .button-hover:hover {
                 transform: scale(1.05);
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             }
 
-            /* Focus animation for input fields */
             .input-focus:focus {
                 outline: none;
-                border-color: #34d399;
+                border-color: #0033FF;
                 box-shadow: 0 0 5px rgba(52, 211, 153, 0.8);
                 transform: scale(1.02);
             }
@@ -62,7 +60,7 @@
                     <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
                     <div class="w-3 h-3 bg-green-500 rounded-full"></div>
                 </div>
-                <span class="text-sm text-gray-400">by azamTcodeR</span>
+                <span class="text-sm text-gray-400"></span>
             </div>
 
             <div class="p-6">
@@ -83,8 +81,4 @@
             </div>
         </div>
     </body>
-</html>
-        </div>
-    </div>
-</body>
 </html>
